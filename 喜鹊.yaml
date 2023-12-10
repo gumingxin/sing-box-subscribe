@@ -1,0 +1,21 @@
+# NAME: 喜鹊
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2023-12-07 16:36:25
+# DOMAIN: 11
+# DOMAIN-KEYWORD: 2
+# DOMAIN-SUFFIX: 11
+# PROCESS-NAME: 1
+# TOTAL: 1
+payload:
+  - DOMAIN-magpie.cyou
+  - DOMAIN-cdn01.magpie.gq
+  - DOMAIN-cdn02.magpie.gq
+  - DOMAIN-cdn03.magpie.gq
+  - DOMAIN-cdn04.magpie.gq
+  - DOMAIN-cdn05.magpie.gq
+  - DOMAIN-cdn06.magpie.gq
+  - DOMAIN-v6.cdn08.magpie.gq
+  - DOMAIN-cdn10.magpie.gq
+  - DOMAIN-v6.cdn01.magpie.gq
+  - DOMAIN-v6.cdn06.magpie.gq
