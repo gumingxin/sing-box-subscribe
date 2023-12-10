@@ -1,0 +1,7 @@
+rule-providers:
+  magpie_rule:
+    type: http
+    behavior: classical
+    url: "http://sh.magpie.cf/magpie_rule"
+    path: ./profiles/rules/magpie_rule.yaml
+    interval: 86400
