@@ -1,0 +1,14 @@
+payload:
+  # 内容：magpie
+  # 数量：11条
+  - DOMAIN-SUFFIX,magpie.cyou
+  - DOMAIN-SUFFIX,cdn01.magpie.gq
+  - DOMAIN-SUFFIX,cdn02.magpie.gq
+  - DOMAIN-SUFFIX,cdn03.magpie.gq
+  - DOMAIN-SUFFIX,cdn04.magpie.gq
+  - DOMAIN-SUFFIX,cdn05.magpie.gq
+  - DOMAIN-SUFFIX,cdn06.magpie.gq
+  - DOMAIN-SUFFIX,v6.cdn08.magpie.gq
+  - DOMAIN-SUFFIX,cdn10.magpie.gq
+  - DOMAIN-SUFFIX,v6.cdn01.magpie.gq
+  - DOMAIN-SUFFIX,v6.cdn06.magpie.gq
