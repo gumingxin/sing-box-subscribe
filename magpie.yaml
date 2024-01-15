@@ -24,3 +24,4 @@ payload:
   - DOMAIN-SUFFIX,10.magpiecdn.eu.org
   - DOMAIN-SUFFIX,11.magpiecdn.eu.org
   - DOMAIN-SUFFIX,12.magpiecdn.eu.org
+  - DOMAIN-KEYWORD,magpie
