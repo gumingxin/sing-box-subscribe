@@ -1,0 +1,9 @@
+payload:
+  # 内容：Block iOS Update
+  # 数量：4条
+  - DOMAIN-SUFFIX,mesu.apple.com
+  - DOMAIN-SUFFIX,gdmf.apple.com
+  - DOMAIN-SUFFIX,updates-http.cdn-apple.com
+  - DOMAIN-SUFFIX,xp.apple.com
+
+
