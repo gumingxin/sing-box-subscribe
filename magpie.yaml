@@ -7,7 +7,7 @@ payload:
   - DOMAIN-SUFFIX,cdn03.magpie.bond
   - DOMAIN-SUFFIX,cdn04.magpie.bond
   - DOMAIN-SUFFIX,cdn05.magpie.bond
-  - DOMAIN-SUFFIX,cdn06.magpie.bond
+  - DOMAIN-SUFFIX,magpie.bond
   - DOMAIN-SUFFIX,v6.cdn08.magpie.bond
   - DOMAIN-SUFFIX,cdn10.magpie.bond
   - DOMAIN-SUFFIX,v6.cdn01.magpie.bond
@@ -23,5 +23,6 @@ payload:
   - DOMAIN-SUFFIX,9.magpiecdn.eu.org
   - DOMAIN-SUFFIX,10.magpiecdn.eu.org
   - DOMAIN-SUFFIX,11.magpiecdn.eu.org
-  - DOMAIN-SUFFIX,12.magpiecdn.eu.org
+  - DOMAIN-SUFFIX,magpiecdn.eu.org
   - DOMAIN-KEYWORD,magpie
+  - DOMAIN-KEYWORD,magpiecdn
