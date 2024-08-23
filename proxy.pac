@@ -23,13 +23,14 @@ function FindProxyForURL(url, host) {
         "taobao.com"
     ];
 
+    if (isInNet(host, "192.168.1.0", "255.255.255.0")) {
+        return "DIRECT";
+    }
+
     for (var i = 0; i < directDomains.length; i++) {
-        if (dnsDomainIs(host, directDomains[i]) || shExpMatch(host, directDomains[i])) {
+        if (dnsDomainIs(host, directDomains[i])) {
             return "DIRECT";
         }
-	if (isInNet(host, "192.168.1.0", "255.255.255.0")) {
-        return "DIRECT"; 
-    }
     }
 
     return "PROXY 192.168.1.12:2222";
