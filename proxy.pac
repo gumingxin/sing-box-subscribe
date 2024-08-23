@@ -5,7 +5,7 @@ function FindProxyForURL(url, host) {
         "*.gov.cn",
         "*.edu.cn",
         "cn",
-        "sina.com",
+        "*.asia",
         "baidu.com",
         "jd.com",
         "taobao.com"
