@@ -8,6 +8,18 @@ function FindProxyForURL(url, host) {
         "*.asia",
         "baidu.com",
         "jd.com",
+        "toutiao.com",
+        "toutiaoapi.com",
+        "toutiaocdn.com",
+        "toutiaocloud.com",
+        "toutiaocloud.net",
+        "toutiaohao.com",
+        "toutiaohao.net",
+        "toutiaoimg.com",
+        "toutiaoimg.net",
+        "toutiaopage.com",
+        "toutiaostatic.com",
+        "toutiaovod.com",
         "taobao.com"
     ];
 
