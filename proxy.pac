@@ -34,7 +34,6 @@ function FindProxyForURL(url, host) {
         "toutiaopage.com",
         "toutiaostatic.com",
         "toutiaovod.com",
-
         "*.00cdn.com",
         "*.0123456789.com",
         "*.0379home.com",
