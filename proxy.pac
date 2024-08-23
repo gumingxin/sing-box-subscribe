@@ -32,5 +32,5 @@ function FindProxyForURL(url, host) {
     }
     }
 
-    return "PROXY 114.226.9.29:8123";
+    return "PROXY 192.168.1.12:2222";
 }
