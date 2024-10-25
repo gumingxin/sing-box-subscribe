@@ -27,12 +27,6 @@ craig.ns.cloudflare.com
 decker.ns.cloudflare.com
 damien.ns.cloudflare.com
 dylan.ns.cloudflare.com
-103.160.204.59:443#HK
-198.62.62.4:443#HK
-75.2.32.4:443#HK
-104.17.142.12:443#HK
-104.17.68.85:443#HK
-104.17.71.31:443#HK
 104.18.233.229:443#HK
 162.159.129.67:443#HK
 104.16.134.27:443#HK
