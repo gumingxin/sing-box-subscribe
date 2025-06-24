@@ -16,10 +16,11 @@ jobs:
 
       - name: Download sing-box
         run: |
-          mkdir singbox && cd singbox
-          curl -L -o sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/latest/download/sing-box-linux-amd64.tar.gz
-          tar -xzf sing-box.tar.gz
-          chmod +x sing-box
+          SINGBOX_VERSION=v1.9.3
+          curl -L -o sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/download/${SINGBOX_VERSION}/sing-box-linux-amd64.tar.gz
+          mkdir singbox
+          tar -xzf sing-box.tar.gz -C singbox
+          chmod +x singbox/sing-box
 
       - name: Convert xiaoxin/config.json to xiaoxin/config.srs
         run: |
