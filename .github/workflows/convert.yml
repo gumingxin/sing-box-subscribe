@@ -3,7 +3,7 @@ name: Convert sing-box JSON to SRS
 on:
   push:
     paths:
-      - 'config.json'
+      - 'xiaoxin/config.json'
   workflow_dispatch:
 
 jobs:
@@ -17,18 +17,18 @@ jobs:
       - name: Download sing-box
         run: |
           mkdir singbox && cd singbox
-          curl -L -o sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/latest/download/sing-box-$(uname -s | tr A-Z a-z)-amd64.tar.gz
+          curl -L -o sing-box.tar.gz https://github.com/SagerNet/sing-box/releases/latest/download/sing-box-linux-amd64.tar.gz
           tar -xzf sing-box.tar.gz
           chmod +x sing-box
 
-      - name: Convert config.json to config.srs
+      - name: Convert xiaoxin/config.json to xiaoxin/config.srs
         run: |
-          ./singbox/sing-box convert -c config.json -o config.srs
+          ./singbox/sing-box convert -c xiaoxin/config.json -o xiaoxin/config.srs
 
-      - name: Commit and push .srs file
+      - name: Commit and push updated .srs file
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add config.srs
-          git commit -m "Auto convert config.json to config.srs"
+          git add xiaoxin/config.srs
+          git commit -m "Auto update config.srs from config.json" || echo "No changes to commit"
           git push
