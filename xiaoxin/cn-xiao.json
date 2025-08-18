@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+       "mobalytics.gg",
+       "www.silergy.com",
+      "www.guyawen520.asia"
+      ],
+      "domain_suffix": [
+        "guyawen520.asia",
+        "silergy.com",
+        "mobalytics.gg",
+        "ubixioe.com",
+        "snssdk.com",
+        "mobalytics.gg",
+        "mmstat.com"
+      ],
+      "domain_keyword": [
+        "guyawen520"
+      ]
+    }
+  ]
+}

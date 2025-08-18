@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "google.com",
+        "www.fx168news.com",
+        "googleapis.com"
+      ],
+      "domain_suffix": [
+       "fx168news.com",
+       "icloudnative.io",
+        "c.mi.com",
+        "google.com",
+        "googleapis.com"
+      ],
+      "domain_keyword": [
+        "google",
+        "googleapis"
+      ]
+    }
+  ]
+}
