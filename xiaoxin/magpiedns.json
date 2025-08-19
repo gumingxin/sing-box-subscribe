@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain": [
+                "6.v6v223789.sxfwvxg1.223789.xyz",
+                "6.v6v223789.kmfjnwr1.223789.xyz",
+                "6.v6dwv882.b.gpou.sweioxg2.223789.xyz",
+                "6.v6vw8v3.g.ffmx.ummxxbs1.223789.xyz",
+                "www.023168.xyz"
+            ],
+            "domain_suffix": [
+                "6.v6v223789.sxfwvxg1.223789.xyz",
+                "6.v6v223789.kmfjnwr1.223789.xyz",
+                "6.v6dwv882.b.gpou.sweioxg2.223789.xyz",
+                "6.v6vw8v3.g.ffmx.ummxxbs1.223789.xyz",
+                "www.023168.xyz",
+                "*.023168.xyz",
+                "023168.xyz"
+            ]
+        }
+    ]
+}
