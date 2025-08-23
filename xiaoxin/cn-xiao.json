@@ -9,7 +9,9 @@
         "account.aliyun.com",
         "飞兔云官网.com",
         "mobalytics.gg",  
-        "toutiao.com", 
+        "toutiao.com",   
+        "pull-tsl-f3.douyinliving.com", 
+        "pull-b5.douyincdn.com.c.volcfcdndvs.com",
         "tyjr-common-cn-hangzhou.aliyun.com.vipgds.alibabadns.com",
         "gspe19-ssl.ls.apple.com",
        "www.silergy.com",
@@ -17,8 +19,10 @@
       ],
       "domain_suffix": [
         "alibabadns.com",
+        "douyinliving.com", 
         "apple.com",
         "aliyun.com",
+        "douyincdn.com",
         "guyawen520.asia",
         "silergy.com",
         "mobalytics.gg",
@@ -28,6 +32,9 @@
         "mmstat.com"
       ],
       "domain_keyword": [
+        "alibabadns.com",
+        "douyinliving.com", 
+        "douyincdn.com",
         "guyawen520"
       ]
     }
