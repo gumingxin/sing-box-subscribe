@@ -11,7 +11,7 @@
         "mobalytics.gg",  
         "toutiao.com",   
         "pull-tsl-f3.douyinliving.com", 
-        "pull-b5.douyincdn.com.c.volcfcdndvs.com",
+        "pull-b5.douyincdn.com.c.volcfcdndvs.com",       
         "tyjr-common-cn-hangzhou.aliyun.com.vipgds.alibabadns.com",
         "gspe19-ssl.ls.apple.com",
        "www.silergy.com",
@@ -35,6 +35,7 @@
         "alibabadns.com",
         "douyinliving.com", 
         "douyincdn.com",
+        "bytefcdn.com", 
         "guyawen520"
       ]
     }
