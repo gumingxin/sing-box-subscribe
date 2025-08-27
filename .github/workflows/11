@@ -1,0 +1,13 @@
+      - name: Unzip sing-box.zip into xiaoxin folder
+        shell: powershell
+        run: |
+          $zipPath = "xiaoxin/sing-box.zip"
+          $destPath = "xiaoxin"
+
+          if (Test-Path $zipPath) {
+            Expand-Archive -Path $zipPath -DestinationPath $destPath -Force
+            Write-Host "✅ Unzipped $zipPath to $destPath"
+          } else {
+            Write-Error "❌ $zipPath not found!"
+            exit 1
+          }
