@@ -3,6 +3,9 @@
   "rules": [
     {
       "domain_suffix": [
+         "tt.x.bsgslb.cn",
+         "dlied1.cdntips.net",
+         "vegslb.com",
         "test-ipv6.com",
          "smtcdns.com",
          "smtcdns.net",
