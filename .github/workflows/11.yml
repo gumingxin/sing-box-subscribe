@@ -1,9 +1,20 @@
-      - name: Unzip sing-box.zip into xiaoxin folder
+name: Unzip_sing-box
+
+on:
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  unzip:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Unzip sing-box.zip to xiaoxin folder
         shell: powershell
         run: |
           $zipPath = "xiaoxin/sing-box.zip"
           $destPath = "xiaoxin"
-
           if (Test-Path $zipPath) {
             Expand-Archive -Path $zipPath -DestinationPath $destPath -Force
             Write-Host "✅ Unzipped $zipPath to $destPath"
