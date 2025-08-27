@@ -1,38 +1,52 @@
 name: Convert_Xiaoxin_JSON_to_SRS
 
 on:
+  workflow_dispatch:          # 手动触发
   push:
     paths:
-      - 'xiaoxin/*.json'   # 只要 xiaoxin 文件夹下的 json 文件有变动就触发
+      - 'xiaoxin/*.json'     # xiaoxin 下 JSON 文件有变动自动触发
   schedule:
-    - cron: '0 18 * * *'   # UTC 时间 18 点，相当于北京时间 02:00
-  workflow_dispatch:       # 允许手动触发
+    - cron: '0 18 * * *'     # UTC 18:00 (北京时间 02:00)
 
 jobs:
   convert-rules:
     runs-on: windows-latest
 
     steps:
-      # 1. 检出代码
+      # 1. 检出仓库
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # 2. 下载 sing-box
-      - name: Download sing-box v1.9.4
+      # 2. 下载 sing-box.exe（仅当 GitHub 原文件更新或本地缺失）
+      - name: Download sing-box.exe if missing or changed
         shell: powershell
         run: |
           $exePath = "./sing-box.exe"
-          $url = "https://github.com/SagerNet/sing-box/releases/download/v1.9.4/sing-box-1.9.4-windows-amd64.zip"
-          $zipFile = "sing-box.zip"
+          $exeUrl  = "https://github.com/gumingxin/sing-box-subscribe/raw/refs/heads/main/sing-box.exe"
+          $tempExe = "./sing-box_temp.exe"
 
-          Invoke-WebRequest -Uri $url -OutFile $zipFile -TimeoutSec 300
-          Expand-Archive -Path $zipFile -DestinationPath . -Force
-          Remove-Item -Path $zipFile
+          # 下载最新的 sing-box.exe 到临时文件
+          Invoke-WebRequest -Uri $exeUrl -OutFile $tempExe -UseBasicParsing
 
-          $exeFile = Get-ChildItem -Recurse -Filter "*sing-box*.exe" | Select-Object -First 1
-          Rename-Item -Path $exeFile.FullName -NewName $exePath -Force
+          # 判断是否和本地现有文件不同
+          $needUpdate = $true
+          if (Test-Path $exePath) {
+              $hashOld = Get-FileHash $exePath -Algorithm SHA256
+              $hashNew = Get-FileHash $tempExe -Algorithm SHA256
+              if ($hashOld.Hash -eq $hashNew.Hash) {
+                  $needUpdate = $false
+              }
+          }
 
-      # 3. 扫描并编译 xiaoxin 下的所有 json → srs
+          if ($needUpdate) {
+              Write-Host "Updating sing-box.exe..."
+              Move-Item -Path $tempExe -Destination $exePath -Force
+          } else {
+              Write-Host "sing-box.exe is up-to-date."
+              Remove-Item $tempExe
+          }
+
+      # 3. 编译 xiaoxin 下 JSON → SRS
       - name: Convert JSON to SRS
         shell: powershell
         run: |
@@ -50,8 +64,8 @@ jobs:
             }
           }
 
-      # 4. 提交并推送
-      - name: Commit and Push
+      # 4. 检查变化再提交
+      - name: Commit and Push only if changed
         env:
           TOKEN: ${{ secrets.TOKEN }}
         shell: powershell
@@ -59,11 +73,14 @@ jobs:
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
 
+          git add sing-box.exe
           git add xiaoxin/*.srs
 
-          if (git status --porcelain) {
-            git commit -m "Auto-compile updated JSON → SRS"
+          $status = git status --porcelain
+          if ($status) {
+            Write-Host "Changes detected, committing..."
+            git commit -m "Auto-update sing-box.exe and compile JSON → SRS"
             git push https://${{ secrets.TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
           } else {
-            Write-Host "No changes to commit."
+            Write-Host "No changes in SRS or sing-box.exe, skipping commit."
           }
