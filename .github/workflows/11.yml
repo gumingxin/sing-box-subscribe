@@ -1,14 +1,24 @@
-- name: Commit and push sing-box.exe
-  shell: powershell
-  run: |
-    git config user.email "action@github.com"
-    git config user.name "GitHub Action"
+name: Commit sing-box
 
-    git add xiaoxin/sing-box.exe
+on:
+  workflow_dispatch:
 
-    if (git status --porcelain) {
-      git commit -m "Add sing-box.exe from zip"
-      git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
-    } else {
-      Write-Host "No changes to commit."
-    }
+jobs:
+  commit-job:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Commit and push sing-box.exe
+        shell: powershell
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add xiaoxin/sing-box.exe
+          if (git status --porcelain) {
+            git commit -m "Add sing-box.exe from zip"
+            git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+          } else {
+            Write-Host "No changes to commit."
+          }
