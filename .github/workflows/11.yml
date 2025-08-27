@@ -1,7 +1,7 @@
 name: Commit sing-box
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
   commit-job:
