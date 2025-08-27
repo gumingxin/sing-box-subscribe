@@ -11,7 +11,6 @@
         "mobalytics.gg",  
         "toutiao.com",  
         "pcdn.xmcdn.com",
-        "6.ipw.cn",
         "api5-normal-m-lq.toutiaoapi.com", 
         "wetype.weixin.qq.com",
         "pull-tsl-f3.douyinliving.com", 
@@ -24,8 +23,7 @@
       "domain_suffix": [
         "alibabadns.com",
         "douyinliving.com", 
-        "apple.com",
-        "6.ipw.cn",        
+        "apple.com",       
         "toutiaoapi.com",
         "aliyun.com",
         "weixin.qq.com",
