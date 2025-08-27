@@ -1,12 +1,24 @@
-- name: Unzip sing-box.zip to root
-  shell: powershell
-  run: |
-    $zipPath = "sing-box.zip"   # 仓库根目录下的 zip
-    $destPath = "."             # 当前目录，也就是根目录
-    if (Test-Path $zipPath) {
-      Expand-Archive -Path $zipPath -DestinationPath $destPath -Force
-      Write-Host "✅ Unzipped $zipPath to $destPath"
-    } else {
-      Write-Error "❌ $zipPath not found!"
-      exit 1
-    }
+name: Unzip sing-box
+
+on:
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  unzip-job:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Unzip sing-box.zip to root
+        shell: powershell
+        run: |
+          $zipPath = "sing-box.zip"   # 仓库根目录下的 zip
+          $destPath = "."             # 当前目录，也就是根目录
+          if (Test-Path $zipPath) {
+            Expand-Archive -Path $zipPath -DestinationPath $destPath -Force
+            Write-Host "✅ Unzipped $zipPath to $destPath"
+          } else {
+            Write-Error "❌ $zipPath not found!"
+            exit 1
+          }
