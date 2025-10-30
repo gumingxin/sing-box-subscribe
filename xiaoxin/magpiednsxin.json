@@ -4,7 +4,19 @@
         {
             "domain": [
                "www.gggggg.eu.org",
-                "www.bbbbbb.eu.org"
+			   "1.023168.xyz",
+			   "2.023168.xyz",
+			   "3.023168.xyz",
+			   "4.023168.xyz",
+			   "5.023168.xyz",
+			   "6.023168.xyz",
+			   "7.023168.xyz",
+			   "8.023168.xyz",
+			   "9.023168.xyz",
+			   "10.023168.xyz",
+			   "11.023168.xyz",
+			   "12.023168.xyz",
+               "www.bbbbbb.eu.org"
             ],
             "domain_suffix": [
                 "www.gggggg.eu.org",
