@@ -2,10 +2,15 @@
   "version": 1,
   "rules": [
     {
-      "domain_suffix": [       	  
-	  "time.android.com",
-                  "www.msftconnecttest.com",
-                   "dns.msftncsi.com"
+      "domain_suffix": [    
+		  "ntp.ubuntu.com",
+          "0.ubuntu.pool.ntp.org",
+          "1.ubuntu.pool.ntp.org",
+          "2.ubuntu.pool.ntp.org",
+          "time.windows.com",
+	      "time.android.com",
+          "www.msftconnecttest.com",
+          "dns.msftncsi.com"
       ]
     }
   ]
