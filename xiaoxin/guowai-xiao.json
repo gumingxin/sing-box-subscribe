@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "www.yalala.com",
         "google.com",
         "www.fx168news.com",
         "pting.cloub",
@@ -16,6 +17,7 @@
         "googleapis.com"
       ],
       "domain_suffix": [
+       "yalala.com",
         "googleapis.com",
        "xn--ngstr-lra8j.com",
        "fx168news.com",
