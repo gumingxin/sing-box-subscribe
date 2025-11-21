@@ -3,8 +3,8 @@
   "rules": [
     {
       "domain_regex": [  
-      "dl-z01a-[0-9]{4}\\.pickpackapp\\.com$",
-	  "dl-z01a-[0-9]{4}\\.mypikpak\\.com"
+"^dl-[^-]+-[^.]+\\.mypikpak\\.com$",
+"^dl-[^-]+-[^.]+\\.pickpackapp\\.com$"
       ]
     }
   ]
