@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "tag": "pikpak",
   "rules": [
     {
       "domain_regex": [  
