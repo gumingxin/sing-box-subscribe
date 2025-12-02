@@ -3,7 +3,8 @@
     "rules": [
         {
             "domain": [
-               "www.gggggg.eu.org",
+      "www.gggggg.eu.org",
+						"6.v6sfv872vx.qvnfwcly6khc.d0xv239e2.223789.xyz",
 			   "1.023168.xyz",
 			   "2.023168.xyz",
 			   "3.023168.xyz",
@@ -19,6 +20,7 @@
                "www.bbbbbb.eu.org"
             ],
             "domain_suffix": [
+															"6.v6sfv872vx.qvnfwcly6khc.d0xv239e2.223789.xyz",
                 "www.gggggg.eu.org",
                 "*.gggggg.eu.org",
                 "gggggg.eu.org",
