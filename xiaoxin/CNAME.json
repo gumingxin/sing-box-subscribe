@@ -3,7 +3,8 @@
   "rules": [
     {
       "domain_suffix": [    
-                          "updates.cdn-apple.com"
+        "updates.cdn-apple.com",
+        "updates.cdn-apple.com.download.ks-cdn.com"
       ]
     }
   ]
