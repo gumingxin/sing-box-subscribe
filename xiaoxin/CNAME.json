@@ -2,9 +2,10 @@
   "version": 2,
   "rules": [
     {
-      "domain_suffix": [    
+      "domain_suffix": [ 
+        "www.023168.xyz",
         "updates.cdn-apple.com",
-        "updates.g.aaplimg.com",    
+        "updates.g.aaplimg.com",
         "updates.cdn-apple.com.download.ks-cdn.com"
       ]
     }
