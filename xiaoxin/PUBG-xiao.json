@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "api.steampowered.com",
+        "test.steampowered.com",
+        "ipv6check-http.steamserver.net",
+        "cmp1-sgp1.steamserver.net",
+        "cmp2-sgp1.steamserver.net",
+        "cmp1-hkg1.steamserver.net",
+        "cmp2-hkg1.steamserver.net",
+        "cmp3-hkg1.steamserver.net",
+        "cmp1-tyo3.steamserver.net",
+        "cmp2-tyo3.steamserver.net",
+        "acrt-pcprod.acs.pubg.com",
+        "zkd-pcprod.acs.pubg.com",
+        "zk-ga-pcprod.acs.pubg.com",
+        "prod-live-front.playbattlegrounds.com",
+        "prod-live-images.playbattlegrounds.com",
+        "prod-live-cfentry.playbattlegrounds.com",
+        "prod-live-xenuine.playbattlegrounds.com",
+        "country-code.playbattlegrounds.com",
+        "cnbck.playbattlegrounds.com",
+        "pubg1.battleye.com",
+        "catalog.gamepass.com",
+        "ecs.office.com",
+        "log-brofront.kraftonde.com"
+      ],
+      "domain_suffix": [
+        "steampowered.com",
+        "steamserver.net",
+        "acs.pubg.com",
+        "playbattlegrounds.com",
+        "battleye.com",
+        "gamepass.com",
+        "office.com",
+        "kraftonde.com"
+      ],
+      "domain_keyword": [
+        "steam",
+        "pubg",
+        "battleye"
+      ]
+    }
+  ]
+}
