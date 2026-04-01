@@ -3,6 +3,7 @@
   "rules": [
     {
       "domain": [
+        "ip.sb",
         "www.yalala.com",
         "google.com",
         "www.fx168news.com",
@@ -18,6 +19,7 @@
         "googleapis.com"
       ],
       "domain_suffix": [
+        "ip.sb",
        "yalala.com",
         "googleapis.com",
        "xn--ngstr-lra8j.com",
