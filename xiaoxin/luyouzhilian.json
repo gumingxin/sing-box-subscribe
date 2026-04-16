@@ -3,9 +3,11 @@
   "rules": [
     {
       "domain": [
+        "ad.xiaoxin520.ggff.net",
         "b.tengxunkejijia.xyz"
       ],
       "domain_suffix": [
+        "ad.xiaoxin520.ggff.net",
         "b.tengxunkejijia.xyz"
       ]
     }
