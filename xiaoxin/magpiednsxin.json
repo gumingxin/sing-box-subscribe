@@ -3,8 +3,9 @@
     "rules": [
         {
             "domain": [
+			 "hgemby.qzz.io",
       "www.gggggg.eu.org",
-						"vjgcjbxt5jsg.cdn.223789.xyz",
+			"vjgcjbxt5jsg.cdn.223789.xyz",
       "6.v6dwv882.b.gpou.sweioxg2.223789.xyz",
 				"4.v4v223789.axudwbru1.223789.xyz ",
 				"6.v6v223789.axudwbru1.223789.xyz ",
@@ -42,6 +43,7 @@
             "domain_suffix": [
 															"6.v6sfv872vx.qvnfwcly6khc.d0xv239e2.223789.xyz",
                 "www.gggggg.eu.org",
+																 "hgemby.qzz.io",
                 "*.gggggg.eu.org",
                 "gggggg.eu.org",
                 "*.eu.org",
