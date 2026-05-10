@@ -41,6 +41,9 @@
         "googleapis.com"
       ],
       "domain_keyword": [
+        "apple-dns",
+        "apple",
+        "icloud",
         "google",
         "googleapis"
       ]
