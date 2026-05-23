@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "tiktokcdn.com"
+      ],
+      "domain_suffix": [
+        "tiktokcdn.com"
+      ],
+      "domain_keyword": [
+        "tiktokcdn"
+      ]
+    }
+  ]
+}
