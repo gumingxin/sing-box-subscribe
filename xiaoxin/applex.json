@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "etahub.com",
+        "evtubescms.phncdn.com",
+        "mesu.apple.com",
+        "gdmf.apple.com",
+        "updates-http.cdn-apple.com",
+        "xp.apple.com"		
+      ],
+      "domain_suffix": [
+        "mesu.apple.com",
+        "gdmf.apple.com",
+        "updates-http.cdn-apple.com",
+        "xp.apple.com"
+      ]
+    }
+  ]
+}
